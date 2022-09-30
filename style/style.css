@@ -1,0 +1,251 @@
+@font-face {
+    font-family: amazon-ember;
+    src: url(/fonts/amazon\ ember.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: amazon-ember, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img{
+    width:100%
+}
+/**header**/
+header{
+    width:100vw;
+}
+/**navbar**/
+.navbar{
+    height: 60px;
+    background-color: rgb(19,25,33);
+    display: flex;
+    color: white;
+    width: 100vw;
+}
+.logo{
+    height:50px;
+    width: 5%;
+    padding: 5px;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    border: 1px black solid;
+}
+
+
+.logo:hover{
+    border: 1px white solid;
+}
+
+.ships-to{
+    display: flex;
+}
+
+.location-img{
+    margin: 15px;
+    width:15px;
+    height: 18px;
+}
+
+.ships-text{
+    margin: 15px;
+}
+
+.search{
+    padding-left: 10px;
+    
+}
+
+form input{
+    width:60vw;
+    height :38px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.search-btn{
+    background-color:rgb(254,189,105) ;
+    width:45px;
+    height: 40px;
+    margin-top: 9px;
+    border-radius: 5px;
+}
+
+.navbar-right{
+    display: flex;
+}
+.n-right{
+    margin: 8px;
+    
+}
+n-right:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.flag{
+    width:57px;
+    
+}
+.sign-in{
+    width:130px;
+    
+}
+.returns{
+    width:76px;
+    
+}
+.cart-img{
+    width:80px;
+    
+}
+/**nav-progressive **/
+.nav-progressive{
+    width: 100vw;
+    height: 39px;
+    background-color: rgb(35,47,62);
+    color: white;
+    font-size: 14px;
+    
+}
+.nav-progressive ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-progressive li{
+margin: 3px 6px;
+font-weight: 600;
+padding: 3px 12px;
+}
+
+.nav-progressive li:hover{
+   cursor: pointer;
+   border: 1px white solid;
+    }
+
+/** **/
+.ship-delay{
+    width: 100vw;
+    height:48px;
+    background-color: rgb(216,247,235);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.ad{
+    height: 53px;
+    background-color:rgb(246,246,246);
+    border: 1px solid rgb(192, 185, 185);
+    display: flex;
+    width: 100vw;
+}
+
+.ad img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ad:hover{
+    cursor: pointer;
+}
+/**main**/
+.container{
+    display: flex;
+    width: 100vw;
+}
+/**gallery **/
+.gallery{
+    width:25%;
+    margin-top:1%;
+    margin-left: 12%;
+    margin-right: 1%;
+    height: 750px;
+    display: flex;
+    
+}
+
+
+.gallery-img{
+    width:460px;
+    height: 460px;
+    
+}
+.mini{
+    width:40px;
+    height: 40px;
+    border: 1px black solid;
+    margin: 6px 1px;
+}
+
+mini:hover{
+    width:460px;
+    height: 460px;
+}
+/**description **/
+.describe h1{
+    font-size: 24px;
+    line-height: 32px;
+}
+.describe{
+    width:40%;
+    
+    height: 750px;
+    margin-top: 1%;
+    padding-right: 2%;
+    line-height: 20px;
+    font-size: 14px;
+    padding-right: 5%;
+    padding-left: 1%;
+}
+
+.stars{
+    width:80px;
+    height: 18px;
+}
+/**cart**/
+.cart{
+    padding-top: 1%;
+    margin-top: 1%;
+    padding-left: 1%;
+    width:12%;
+    height: 750px;
+    border:1px rgb(213,217,217) solid;
+    line-height: 20px;
+    font-size: 14px;
+}
+/**footer **/
+.container2{
+    display: flex;
+    justify-content: space-around;
+}
+.other-container{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width:20%
+}
+
+.carrousel{
+    background-color:antiquewhite;
+    height: 356px;
+    width: 60%;
+    
+}
+
+.other-new{
+    background-color: antiquewhite;
+    height: 70px;
+    
+}
+.other-sellers{
+    background-color: antiquewhite;
+    height: 200px;
+    
+}
