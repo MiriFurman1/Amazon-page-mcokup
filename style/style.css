@@ -9,14 +9,32 @@
     font-family: amazon-ember, sans-serif;
     font-size: 14px;
     line-height: 20px;
+    font-weight: 400;
 }
 
+main{
+    max-width:100%;
+    
+}
 img{
     width:100%
 }
+a{
+    cursor: default;
+    color: rgb(57,118,149);
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(177,39,28);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /**header**/
 header{
     width:100vw;
+    
 }
 /**navbar**/
 .navbar{
@@ -24,34 +42,50 @@ header{
     background-color: rgb(19,25,33);
     display: flex;
     color: white;
-    width: 100vw;
+    
+}
+.sign-in2{
+    display:none;
+}
+
+.cart2{
+    display:none;
 }
 .logo{
-    height:50px;
-    width: 5%;
+    width: 110px;
     padding: 5px;
     margin-top: 0.5%;
     margin-left: 1%;
     border: 1px black solid;
+    min-width:110px;
 }
-
 
 .logo:hover{
     border: 1px white solid;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .ships-to{
     display: flex;
+    height: 45px;
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
 }
 
+.ships-to:hover{
+    border: 1px white solid;
+    cursor: pointer;
+}
 .location-img{
-    margin: 15px;
-    width:15px;
-    height: 18px;
+    
+    min-height: 18px;
 }
-
 .ships-text{
-    margin: 15px;
+    font-size:12px;
+    line-height: 6px;
 }
 
 .search{
@@ -60,10 +94,14 @@ header{
 }
 
 form input{
-    width:60vw;
+    width:50vw;
     height :38px;
     margin-top: 10px;
     border-radius: 5px;
+}
+.form-div{
+    display: flex;
+    flex-direction: row;
 }
 .search-btn{
     background-color:rgb(254,189,105) ;
@@ -78,9 +116,9 @@ form input{
 }
 .n-right{
     margin: 8px;
-    
+    max-width:50%
 }
-n-right:hover{
+.n-right:hover{
     cursor: pointer;
     border: 1px solid white;
 }
@@ -122,7 +160,7 @@ padding: 3px 12px;
 }
 
 .nav-progressive li:hover{
-   cursor: pointer;
+    cursor: pointer;
    border: 1px white solid;
     }
 
@@ -136,6 +174,7 @@ padding: 3px 12px;
     line-height: 20px;
     padding-top: 10px;
     padding-left: 20px;
+    
 }
 
 .ad{
@@ -144,6 +183,7 @@ padding: 3px 12px;
     border: 1px solid rgb(192, 185, 185);
     display: flex;
     width: 100vw;
+    
 }
 
 .ad img{
@@ -158,6 +198,7 @@ padding: 3px 12px;
 .container{
     display: flex;
     width: 100vw;
+    
 }
 /**gallery **/
 .gallery{
@@ -174,7 +215,8 @@ padding: 3px 12px;
 .gallery-img{
     width:460px;
     height: 460px;
-    
+    position: sticky;
+    top:0;
 }
 .mini{
     width:40px;
@@ -183,18 +225,27 @@ padding: 3px 12px;
     margin: 6px 1px;
 }
 
-mini:hover{
-    width:460px;
-    height: 460px;
+.mini:hover{
+    cursor: pointer;
+    border:2px solid orange
 }
+
+
 /**description **/
 .describe h1{
     font-size: 24px;
     line-height: 32px;
+    font-weight: 600;
+}
+.brand{
+    padding: 0;
+    margin: 0;
+    width:7vw;
+    
+    font-weight:600;
 }
 .describe{
-    width:40%;
-    
+    width:37%;
     height: 750px;
     margin-top: 1%;
     padding-right: 2%;
@@ -208,6 +259,17 @@ mini:hover{
     width:80px;
     height: 18px;
 }
+.describe h3{
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 16px;
+}
+.describe li{
+font-weight: 600;
+font-size: 15;
+line-height: 25px;
+}
 /**cart**/
 .cart{
     padding-top: 1%;
@@ -216,13 +278,60 @@ mini:hover{
     width:12%;
     height: 750px;
     border:1px rgb(213,217,217) solid;
-    line-height: 20px;
-    font-size: 14px;
+    
+    padding-right: 1%;
+}
+
+.cart h3{
+    font-size: 18px;
+    color: rgb(177,39,4);
+    font-weight: 600;
+    margin-bottom: 7%;
+}
+.cart p{
+    line-height: 25px;
+    font-weight: 500;
+}
+.add-btn{
+    margin:5%;
+    padding: 5%;
+    border-radius: 20px;
+    background: rgb(255,216,20);
+    text-align: center;
+}
+.add-btn:hover{
+    background-color: rgb(204, 173, 18);
+}
+.buy-btn{
+    margin:5%;
+    padding: 5%;
+    border-radius: 20px;
+background-color: rgb(255,164,28);
+text-align: center;
+}
+.buy-btn:hover{
+    background-color: rgb(199, 128, 22); 
+}
+
+cart-down{
+    font-size: 12px;
 }
 /**footer **/
+
+footer h2{
+    border-top: 1px rgb(204,204,204) solid;
+    margin-left: 10%;
+    margin-right: 30%;
+    padding-top:1% ;
+    padding-bottom: 1%;
+    color:rgb(177,39,28);
+    font-size: 20px;
+
+}
 .container2{
     display: flex;
     justify-content: space-around;
+    
 }
 .other-container{
     
@@ -233,12 +342,18 @@ mini:hover{
 }
 
 .carrousel{
-    background-color:antiquewhite;
+    
     height: 356px;
     width: 60%;
-    
+    margin-left:8% ;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px rgb(204,204,204) solid;
 }
 
+.car-item{
+    margin: 1%;
+}
 .other-new{
     background-color: antiquewhite;
     height: 70px;
