@@ -353,6 +353,7 @@ footer h2{
 
 .car-item{
     margin: 1%;
+    max-width: 146px;
 }
 .other-new{
     height: 50px;
